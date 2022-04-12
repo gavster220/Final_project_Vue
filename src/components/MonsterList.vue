@@ -17,9 +17,9 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>80</td>
-                            <td>80</td>
-                            <td>80</td>
+                            <td>{{data}}</td>
+                            <td>{{data}}</td>
+                            <td>{{data}}</td>
                         </tr>
                     </tbody>
                 </MDBTable>
@@ -38,6 +38,7 @@ export default {
     },
     props: {
         msg: String,
+        data: Number
     },
     methods: {
 

@@ -17,13 +17,14 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>15</td>
-                            <td>15</td>
-                            <td>15</td>
+                            <td>{{initialNumbers}}</td>
+                            <td>{{initialNumbers}}</td>
+                            <td>{{initialNumbers}}</td>
                         </tr>
                     </tbody>
                 </MDBTable>
             </div>
+            <button @click="this.$router.push({ name: 'MonsterListView', params: {data: initialNumbers }})">Next</button>
         </div>
     </MDBContainer>
 </template>
@@ -33,6 +34,11 @@ import { MDBContainer } from 'mdb-vue-ui-kit'
 
 export default {
     name: 'HelloWorld',
+    data() {
+        return {
+            initialNumbers: 15
+        }
+    },
     components: {
         MDBContainer,
     },
