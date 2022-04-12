@@ -6,17 +6,20 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    props: true
   },
   {
     path: '/monster_list',
     name: 'MonsterListView',
-    component: MonsterListView
+    component: MonsterListView,
+    props: true
   },
   {
     path: '/monster_list',
     name: 'MonsterListView',
-    component: MonsterListView
+    component: MonsterListView,
+    props: true
   },
 
 ]
